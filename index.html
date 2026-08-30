@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickServe - Local Services, Made Simple</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Poppins Font import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">Q</span> QuickServe
+            </a>
+            <nav class="nav-links" id="navLinks">
+                <a href="#" class="active">Home</a>
+                <a href="#categories">Services</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#about">About</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="btn-text" id="loginBtn">Login</button>
+                <button class="btn-coral" id="getStartedBtn">Get Started</button>
+            </div>
+            <button class="hamburger-button" type="button" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-content fade-in-up">
+                    <span class="pill-badge"> LOCAL SERVICES, MADE SIMPLE</span>
+                    <h1>Trusted Local Services,<br><span class="highlight">Right When You Need Them.</span></h1>
+                    <p class="hero-subtext">QuickServe helps you find and book reliable local professionals  electricians, plumbers, cleaners and more without endless WhatsApp messages or phone calls.</p>
+
+                    <div class="search-box">
+                        <input type="text" placeholder="Search for a service or provider...">
+                        <button class="btn-search">Search</button>
+                    </div>
+
+                    <div class="hero-buttons">
+                        <button class="btn-coral">Browse Services</button>
+                        <button class="btn-outline">Become a Provider</button>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <h3>1,200+</h3>
+                            <p>Bookings completed</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>350+</h3>
+                            <p>Verified providers</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>4.8★</h3>
+                            <p>Average rating</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image-container fade-in-up delay-1">
+                    <div class="rating-bubble">
+                        <span class="rating-stars">★★★★★</span>
+                        <strong>4.9</strong>
+                        <small>Trusted by 1,200+ families</small>
+                    </div>
+                    <img src="images/hero.png" alt="QuickServe Hero Image" class="hero-custom-img" onerror="this.style.display='none'; document.getElementById('hero-img-fallback').style.display='flex';">
+                </div>
+            </div>
+        </section>
+
+        <section class="section categories-section" id="categories">
+            <div class="section-header fade-in-up">
+                <span class="sub-heading">POPULAR CATEGORIES</span>
+                <h2>What are you looking for today?</h2>
+                <p>Browse our most requested home service categories.</p>
+            </div>
+            <div class="grid grid-3">
+                <div class="cat-card bg-img-card fade-in-up" style="background-image: url('images/electrician.png');">
+                    <div class="overlay"></div>
+                    <div class="cat-content">
+                        <div class="cat-icon icon-yellow">⚡</div>
+                        <h3>Electrician</h3>
+                        <p>Wiring & repairs</p>
+                    </div>
+                </div>
+                <div class="cat-card bg-img-card fade-in-up delay-1" style="background-image: url('images/plumber.png');">
+                    <div class="overlay"></div>
+                    <div class="cat-content">
+                        <div class="cat-icon icon-coral">🔧</div>
+                        <h3>Plumber</h3>
+                        <p>Leaks & fittings</p>
+                    </div>
+                </div>
+                <div class="cat-card bg-img-card fade-in-up delay-2" style="background-image: url('images/ac.png');">
+                    <div class="overlay"></div>
+                    <div class="cat-content">
+                        <div class="cat-icon icon-blue">❄️</div>
+                        <h3>AC Repair</h3>
+                        <p>Servicing & install</p>
+                    </div>
+                </div>
+                <div class="cat-card bg-img-card fade-in-up" style="background-image: url('images/cleaning.png');">
+                    <div class="overlay"></div>
+                    <div class="cat-content">
+                        <div class="cat-icon icon-orange">🧹</div>
+                        <h3>Cleaning</h3>
+                        <p>Homes & offices</p>
+                    </div>
+                </div>
+                <div class="cat-card bg-img-card fade-in-up delay-1" style="background-image: url('images/carpenter.png');">
+                    <div class="overlay"></div>
+                    <div class="cat-content">
+                        <div class="cat-icon icon-peach">🪑</div>
+                        <h3>Carpenter</h3>
+                        <p>Furniture & fittings</p>
+                    </div>
+                </div>
+                <div class="cat-card bg-img-card fade-in-up delay-2" style="background-image: url('images/painting.png');">
+                    <div class="overlay"></div>
+                    <div class="cat-content">
+                        <div class="cat-icon icon-gold">🎨</div>
+                        <h3>Painter</h3>
+                        <p>Interior & exterior</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="section providers-section">
+            <div class="section-header fade-in-up">
+                <span class="sub-heading">TOP RATED</span>
+                <h2>Featured providers near you</h2>
+                <p>Highly rated professionals ready to help this week.</p>
+            </div>
+            <div class="slider-wrapper">
+                <button class="slider-btn prev-btn" id="slideLeft">&#10094;</button>
+                
+                <div class="cards-slider" id="cardsContainer">
+                    <div class="provider-card">
+                        <div class="provider-header">
+                            <div class="avatar ak">AK</div>
+                            <div>
+                                <h3>Ahmed Khan</h3>
+                                <span class="role">Electrician</span>
+                            </div>
+                        </div>
+                        <p class="provider-info">📍 Gulberg, Lahore &nbsp;•&nbsp; 🛠️ 6 yrs experience</p>
+                        <div class="provider-rating">
+                            <span>★ 4.8</span> <small>(132)</small>
+                            <span class="badge-available">• Available</span>
+                        </div>
+                        <div class="provider-footer">
+                            <div class="price">
+                                <strong>Rs. 1,500</strong>
+                                <small>starting price</small>
+                            </div>
+                            <button class="btn-profile">View Profile</button>
+                        </div>
+                    </div>
+
+                    <div class="provider-card">
+                        <div class="provider-header">
+                            <div class="avatar ba">BA</div>
+                            <div>
+                                <h3>Bilal Ahmed</h3>
+                                <span class="role">Plumber</span>
+                            </div>
+                        </div>
+                        <p class="provider-info">📍 Model Town, Karachi &nbsp;•&nbsp; 🛠️ 5 yrs experience</p>
+                        <div class="provider-rating">
+                            <span>★ 4.7</span> <small>(98)</small>
+                            <span class="badge-available">• Available</span>
+                        </div>
+                        <div class="provider-footer">
+                            <div class="price">
+                                <strong>Rs. 1,000</strong>
+                                <small>starting price</small>
+                            </div>
+                            <button class="btn-profile">View Profile</button>
+                        </div>
+                    </div>
+
+                    <div class="provider-card">
+                        <div class="provider-header">
+                            <div class="avatar sm">SM</div>
+                            <div>
+                                <h3>Sameer Malik</h3>
+                                <span class="role">AC Repair</span>
+                            </div>
+                        </div>
+                        <p class="provider-info">📍 DHA, Karachi &nbsp;•&nbsp; 🛠️ 7 yrs experience</p>
+                        <div class="provider-rating">
+                            <span>★ 4.9</span> <small>(210)</small>
+                            <span class="badge-available">• Available</span>
+                        </div>
+                        <div class="provider-footer">
+                            <div class="price">
+                                <strong>Rs. 2,500</strong>
+                                <small>starting price</small>
+                            </div>
+                            <button class="btn-profile">View Profile</button>
+                        </div>
+                    </div>
+
+                    <div class="provider-card">
+                        <div class="provider-header">
+                            <div class="avatar ut">UT</div>
+                            <div>
+                                <h3>Usman Tariq</h3>
+                                <span class="role">Carpenter</span>
+                            </div>
+                        </div>
+                        <p class="provider-info">📍 Johar Town, Karachi&nbsp;•&nbsp; 🛠️ 4 yrs experience</p>
+                        <div class="provider-rating">
+                            <span>★ 4.6</span> <small>(75)</small>
+                            <span class="badge-available">• Available</span>
+                        </div>
+                        <div class="provider-footer">
+                            <div class="price">
+                                <strong>Rs. 1,800</strong>
+                                <small>starting price</small>
+                            </div>
+                            <button class="btn-profile">View Profile</button>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="slider-btn next-btn" id="slideRight">&#10095;</button>
+            </div>
+
+            <div class="center-btn">
+                <button class="btn-outline">View All Providers</button>
+            </div>
+        </section>
+        <!-- HOW IT WORKS -->
+        <section class="section steps-section" id="how-it-works">
+            <div class="section-header fade-in-up">
+                <span class="sub-heading">SIMPLE PROCESS</span>
+                <h2>How QuickServe works</h2>
+                <p>From browsing to a completed job, in four straightforward steps.</p>
+            </div>
+
+            <div class="grid grid-4">
+                <div class="step-card fade-in-up">
+                    <div class="step-num">1</div>
+                    <h3>Browse</h3>
+                    <p>Explore verified local providers by category, rating and price.</p>
+                </div>
+                <div class="step-card fade-in-up delay-1">
+                    <div class="step-num">2</div>
+                    <h3>Book</h3>
+                    <p>Pick a date, time and describe what you need — takes under a minute.</p>
+                </div>
+                <div class="step-card fade-in-up delay-2">
+                    <div class="step-num">3</div>
+                    <h3>Get Service</h3>
+                    <p>The provider accepts, arrives, and completes the job.</p>
+                </div>
+                <div class="step-card fade-in-up delay-3">
+                    <div class="step-num">4</div>
+                    <h3>Review</h3>
+                    <p>Rate your experience to help others in the community.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- STATS BAR -->
+        <section class="dark-stats-bar">
+            <div class="stat-box">
+                <h2>350+</h2>
+                <p>Verified providers</p>
+            </div>
+            <div class="stat-box">
+                <h2>1,200+</h2>
+                <p>Jobs completed</p>
+            </div>
+            <div class="stat-box">
+                <h2>4.8★</h2>
+                <p>Average rating</p>
+            </div>
+            <div class="stat-box">
+                <h2>8</h2>
+                <p>Service categories</p>
+            </div>
+        </section>
+
+        <!-- WHY QUICKSERVE -->
+        <section class="section feature-section" id="about">
+            <div class="section-header fade-in-up">
+                <span class="sub-heading">WHY QUICKSERVE</span>
+                <h2>Built for trust, made for convenience</h2>
+            </div>
+
+            <div class="grid grid-3">
+                <div class="feature-card fade-in-up">
+                    <div class="feature-icon icon-green">✓</div>
+                    <h3>Verified providers</h3>
+                    <p>Every professional is reviewed by real customers.</p>
+                </div>
+                <div class="feature-card fade-in-up delay-1">
+                    <div class="feature-icon icon-pink">⏱️</div>
+                    <h3>Fast response</h3>
+                    <p>Most providers respond within the hour.</p>
+                </div>
+                <div class="feature-card fade-in-up delay-2">
+                    <div class="feature-icon icon-peach">💬</div>
+                    <h3>No more messy chats</h3>
+                    <p>Track every booking status in one dashboard.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA SECTION -->
+        <section class="cta-banner fade-in-up">
+            <h2>Ready to get things fixed?</h2>
+            <p>Join thousands of customers who trust QuickServe for their home service needs.</p>
+            <button class="btn-coral" >Book a Service Now</button>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo text-white">
+                    <span class="logo-icon">Q</span> QuickServe
+                </a>
+                <p>Connecting customers with trusted local service providers across Pakistan.</p>
+            </div>
+            <div class="footer-links-group">
+                <div>
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>For Customers</h4>
+                    <ul>
+                        <li><a href="#categories">Browse Services</a></li>
+                        <li><a href="#">Get Started</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>For Providers</h4>
+                    <ul>
+                        <li><a href="#">Join as Provider</a></li>
+                        <li><a href="#">Provider Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 QuickServe.</p>
+            <p>Made with care in Karachi, Pakistan.</p>
+        </div>
+    </footer>
+
+    <!-- MODAL POPUP FOR LOGIN / SIGNUP -->
+    <div class="modal-overlay" id="authModal">
+        <div class="modal-card">
+            <button class="close-modal" id="closeModal">&times;</button>
+
+            <!-- TABS -->
+            <div class="modal-tabs">
+                <button class="tab-btn active" id="tabLogin">Login</button>
+                <button class="tab-btn" id="tabSignup">Sign Up</button>
+            </div>
+
+            <!-- LOGIN FORM -->
+            <form id="loginForm" class="auth-form active">
+                <div class="form-group">
+                    <label>Email or Phone</label>
+                    <input type="text" placeholder="name@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" placeholder="••••••••" required>
+                </div>
+                <button type="submit" class="btn-coral full-width">Login to QuickServe</button>
+            </form>
+
+            <!-- SIGNUP FORM -->
+            <form id="signupForm" class="auth-form">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="name@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="tel" placeholder="0300 1234567" required>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" placeholder="••••••••" required>
+                </div>
+                <div class="form-group">
+                    <label>I want to join as:</label>
+                    <select class="form-select">
+                        <option value="customer">Customer (Book Services)</option>
+                        <option value="provider">Provider (Offer Services)</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-coral full-width">Create Account</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
