@@ -1,6 +1,4 @@
-/* ==========================================================================
-   POPPINS FONT & EXACT DESIGN SYSTEM
-   ========================================================================== */
+
 :root {
   --bg-peach: #fae2db;
   --bg-white: #ffffff;
@@ -415,18 +413,6 @@ ul {
   opacity: 0.9;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
 }
-
-.cat-icon {
-  width: 42px;
-  height: 42px;
-  border-radius: 10px;
-  margin-bottom: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.1rem;
-}
-
 .slider-wrapper {
   position: relative;
   display: flex;
