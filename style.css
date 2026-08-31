@@ -239,7 +239,7 @@ ul {
 }
 
 .hero h1 {
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   font-weight: 800;
   line-height: 1.2;
   margin-bottom: 16px;
@@ -663,7 +663,10 @@ ul {
   background: #fce4ec;
   color: #c2185b;
 }
-
+.icon-peach {
+  background: #fceee4;
+  color: #c2185b;
+}
 .feature-card h3 {
   font-size: 0.95rem;
   font-weight: 700;
@@ -859,7 +862,7 @@ ul {
   margin-top: 8px;
 }
 
-/* ANIMATION CLASSES (INTERSECTION OBSERVER) */
+/* ANIMATION CLASSES */
 .fade-in-up {
   opacity: 0;
   transform: translateY(30px);
@@ -893,10 +896,7 @@ ul {
   .footer-container {
     flex-direction: column;
   }
-  .prev-btn,
-  .next-btn {
-    display: none;
-  }
+
 }
 
 @media (max-width: 760px) {
@@ -954,6 +954,45 @@ ul {
   }
 
   .hero h1 {
-    font-size: 2rem;
+    font-size: 1.78rem;
+  }
+   .hero-subtext{
+    font-size: 0.75rem;
+  }
+  .hero-buttons .btn-coral{
+    padding: 10px 12px;
+    font-size: 0.8rem;
+  }
+ .stat-box h2 {
+  font-size: 1.77rem;
+  font-weight: 600;
+}
+.stat-box p {
+  font-size: 0.67rem;
+}
+}
+@media (max-width: 450px){
+ .stat-box h2 {
+  font-size: 1.54rem;
+  font-weight: 600;
+}
+.stat-box p {
+  font-size: 0.51rem; 
+}
+}
+@media (max-width: 380px){
+.nav-actions .btn-coral{
+  width: 100%;
+  font-size: 0.65rem;
+  padding: 8px 10px;
+}
+  .hero-buttons .btn-coral{
+    padding: 10px 12px;
+    font-size: 0.75rem;
+  }
+  .hero-buttons .btn-outline{
+      padding: 10px 12px;
+    font-size: 0.78rem;
   }
 }
+
